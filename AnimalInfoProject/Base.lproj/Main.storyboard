@@ -1,24 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalInfoProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAo-1F-Lhj">
+                                <rect key="frame" x="0.0" y="24" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="giraffe" translatesAutoresizingMaskIntoConstraints="NO" id="eWP-jo-2Ol" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="247" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="Tkg-Uf-g3l"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="ostrich" translatesAutoresizingMaskIntoConstraints="NO" id="JBj-HS-GE8" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="623" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="ZMF-0I-09Z"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="lion" translatesAutoresizingMaskIntoConstraints="NO" id="OJn-RX-Fy3" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="435" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="Iiv-Fx-qIP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="zebra" translatesAutoresizingMaskIntoConstraints="NO" id="z12-FL-JVX" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="435" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="hippopotamus" translatesAutoresizingMaskIntoConstraints="NO" id="zzn-r0-cwI" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="247" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="Uy3-hz-6kR" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="49" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="S2o-3X-suM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="gorilla" translatesAutoresizingMaskIntoConstraints="NO" id="pNj-1d-iKI" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="623" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="cheetah" translatesAutoresizingMaskIntoConstraints="NO" id="I4l-vb-j3U" customClass="AnimalView" customModule="AnimalInfoProject" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="49" width="170" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="9Vd-m0-X8O"/>
+                                            <constraint firstAttribute="height" constant="180" id="kO4-N3-IT2"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWl-MM-eh1">
+                                        <rect key="frame" x="141" y="0.0" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eWP-jo-2Ol" firstAttribute="top" secondItem="I4l-vb-j3U" secondAttribute="bottom" constant="18" id="1QG-1U-c3I"/>
+                                    <constraint firstItem="eWP-jo-2Ol" firstAttribute="leading" secondItem="OJn-RX-Fy3" secondAttribute="leading" id="4iw-hr-P8Y"/>
+                                    <constraint firstItem="Uy3-hz-6kR" firstAttribute="trailing" secondItem="zzn-r0-cwI" secondAttribute="trailing" id="4sV-XC-w4d"/>
+                                    <constraint firstItem="OJn-RX-Fy3" firstAttribute="top" secondItem="z12-FL-JVX" secondAttribute="top" id="7ed-gu-DgZ"/>
+                                    <constraint firstItem="z12-FL-JVX" firstAttribute="leading" secondItem="pNj-1d-iKI" secondAttribute="leading" id="Cd9-sn-5TD"/>
+                                    <constraint firstItem="zzn-r0-cwI" firstAttribute="trailing" secondItem="z12-FL-JVX" secondAttribute="trailing" id="D9p-mq-ez7"/>
+                                    <constraint firstItem="JBj-HS-GE8" firstAttribute="top" secondItem="pNj-1d-iKI" secondAttribute="top" id="DRl-qW-n1h"/>
+                                    <constraint firstItem="zzn-r0-cwI" firstAttribute="leading" secondItem="z12-FL-JVX" secondAttribute="leading" id="Es9-HQ-X4u"/>
+                                    <constraint firstItem="eWP-jo-2Ol" firstAttribute="top" secondItem="zzn-r0-cwI" secondAttribute="top" id="HBl-8p-zJe"/>
+                                    <constraint firstItem="pNj-1d-iKI" firstAttribute="leading" secondItem="JBj-HS-GE8" secondAttribute="trailing" constant="8" symbolic="YES" id="Kgp-Bd-vcY"/>
+                                    <constraint firstItem="I4l-vb-j3U" firstAttribute="leading" secondItem="eWP-jo-2Ol" secondAttribute="leading" id="Op5-Jl-HOL"/>
+                                    <constraint firstItem="zzn-r0-cwI" firstAttribute="leading" secondItem="eWP-jo-2Ol" secondAttribute="trailing" constant="8" symbolic="YES" id="PRN-jp-A9x"/>
+                                    <constraint firstItem="z12-FL-JVX" firstAttribute="trailing" secondItem="pNj-1d-iKI" secondAttribute="trailing" id="Svk-aZ-FaJ"/>
+                                    <constraint firstItem="I4l-vb-j3U" firstAttribute="top" secondItem="ZAo-1F-Lhj" secondAttribute="top" constant="16" id="V2M-4a-PsO"/>
+                                    <constraint firstItem="pNj-1d-iKI" firstAttribute="top" secondItem="z12-FL-JVX" secondAttribute="bottom" constant="8" symbolic="YES" id="VKO-AG-vrd"/>
+                                    <constraint firstItem="OJn-RX-Fy3" firstAttribute="leading" secondItem="JBj-HS-GE8" secondAttribute="leading" id="bIc-zo-gSM"/>
+                                    <constraint firstItem="I4l-vb-j3U" firstAttribute="top" secondItem="Uy3-hz-6kR" secondAttribute="top" id="eAf-TK-ksC"/>
+                                    <constraint firstItem="I4l-vb-j3U" firstAttribute="bottom" secondItem="Uy3-hz-6kR" secondAttribute="bottom" id="eYu-ff-eiB"/>
+                                    <constraint firstItem="JBj-HS-GE8" firstAttribute="bottom" secondItem="pNj-1d-iKI" secondAttribute="bottom" id="gA7-Qj-vIF"/>
+                                    <constraint firstItem="Uy3-hz-6kR" firstAttribute="leading" secondItem="I4l-vb-j3U" secondAttribute="trailing" constant="8" symbolic="YES" id="in8-LT-8jg"/>
+                                    <constraint firstItem="JBj-HS-GE8" firstAttribute="top" secondItem="OJn-RX-Fy3" secondAttribute="bottom" constant="8" symbolic="YES" id="khP-En-vFd"/>
+                                    <constraint firstItem="OJn-RX-Fy3" firstAttribute="top" secondItem="eWP-jo-2Ol" secondAttribute="bottom" constant="8" symbolic="YES" id="mKu-6p-tgt"/>
+                                    <constraint firstItem="I4l-vb-j3U" firstAttribute="leading" secondItem="ZAo-1F-Lhj" secondAttribute="leading" constant="18" id="o1F-A0-Xc0"/>
+                                    <constraint firstItem="z12-FL-JVX" firstAttribute="top" secondItem="zzn-r0-cwI" secondAttribute="bottom" constant="8" symbolic="YES" id="tcK-nD-5mb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uy3-hz-6kR" secondAttribute="trailing" constant="24" id="uOY-UN-JX6"/>
+                                    <constraint firstItem="z12-FL-JVX" firstAttribute="leading" secondItem="OJn-RX-Fy3" secondAttribute="trailing" constant="8" symbolic="YES" id="uU8-cn-kGi"/>
+                                    <constraint firstAttribute="bottom" secondItem="JBj-HS-GE8" secondAttribute="bottom" constant="430" id="w1u-u2-vZZ"/>
+                                    <constraint firstItem="Uy3-hz-6kR" firstAttribute="leading" secondItem="zzn-r0-cwI" secondAttribute="leading" id="w3j-Xk-5aj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="ZAo-1F-Lhj" secondAttribute="bottom" constant="-57" id="0oC-b9-d6r"/>
+                            <constraint firstAttribute="trailing" secondItem="ZAo-1F-Lhj" secondAttribute="trailing" id="5oZ-qG-F80"/>
+                            <constraint firstAttribute="bottom" secondItem="ZAo-1F-Lhj" secondAttribute="bottom" id="JHq-uZ-Wig"/>
+                            <constraint firstItem="ZAo-1F-Lhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N7x-9C-Sla"/>
+                            <constraint firstItem="ZAo-1F-Lhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P1a-Bm-Svd"/>
+                            <constraint firstItem="ZAo-1F-Lhj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="baI-QI-Kd8"/>
+                            <constraint firstItem="ZAo-1F-Lhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tac-YI-oK7"/>
+                            <constraint firstItem="ZAo-1F-Lhj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-36" id="wNl-aR-lv3"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="852"/>
+                    <connections>
+                        <outlet property="cheetah" destination="I4l-vb-j3U" id="z9u-iv-Fcf"/>
+                        <outlet property="elephant" destination="Uy3-hz-6kR" id="GFh-qh-j6k"/>
+                        <outlet property="giraffe" destination="eWP-jo-2Ol" id="ous-ai-v8y"/>
+                        <outlet property="gorilla" destination="zzn-r0-cwI" id="VcF-Ie-1Ya"/>
+                        <outlet property="hippopotamus" destination="OJn-RX-Fy3" id="qfn-Qb-eU4"/>
+                        <outlet property="lion" destination="z12-FL-JVX" id="qui-uv-X8f"/>
+                        <outlet property="ostrich" destination="pNj-1d-iKI" id="5M9-Ft-c1C"/>
+                        <outlet property="zebra" destination="JBj-HS-GE8" id="AFl-3s-Bn0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="90.140845070422543"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
